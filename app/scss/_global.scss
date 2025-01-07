@@ -1,5 +1,10 @@
 html,
 body {
+	font-family: "Poppins", serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: $default;
 	height: 100%;
 }
 
@@ -17,7 +22,7 @@ body {
 }
 
 .container{
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
 }

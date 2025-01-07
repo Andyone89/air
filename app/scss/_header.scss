@@ -1,0 +1,86 @@
+.header {
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        height: 36px;
+        padding-top: 38px;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__button-link {
+        margin-right: 15px;
+
+        color: #181818;
+        cursor: pointer;
+        padding: 6px 0;
+    }
+
+    &__btn {
+        width: 93px;
+        height: 31px;
+        border-radius: 5px;
+        background-color: $content;
+        color: #fff;
+        font-family: "Poppins", serif;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__info-title {
+        font-family: "Roboto", serif;
+        font-size: 66px;
+        line-height: 78px;
+        font-weight: 400;
+        padding-top: 257px;
+        padding-left: 165px;
+        display: block;
+    }
+    &__info-links{
+    }
+
+    &__info-img {
+        padding-top: 150px;
+        right: 0;
+        object-fit: cover;
+    }
+
+    .menu {
+        &__list {
+            display: flex;
+
+        }
+
+        &__list-item {
+            align-items: center;
+            padding: 6px 8px;
+        }
+
+        &__list-link {
+            font-family: "Poppins", serif;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+            color: #181818;
+            cursor: pointer;
+        }
+
+        &__list-link:hover {
+            color: #656293;
+            transition: all 0.3s;
+        }
+    }
+}
