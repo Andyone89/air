@@ -1,5 +1,6 @@
 .header {
-
+    background-image: url(/app/images/header/header-bg.jpg);
+    background-size: 100% 100%;
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -35,9 +36,10 @@
     }
 
     &__info {
+        padding-top: 100px;
+        padding-bottom: 100px;
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
     }
 
     &__info-title {
@@ -45,17 +47,16 @@
         font-size: 66px;
         line-height: 78px;
         font-weight: 400;
-        padding-top: 257px;
-        padding-left: 165px;
-        display: block;
-    }
-    &__info-links{
+        padding: 100px 140px 35px 0;
     }
 
     &__info-img {
-        padding-top: 150px;
         right: 0;
         object-fit: cover;
+        display: block;
+        border: 15px solid linear-gradient(to right, red, orange);
+        border-radius: 120px;
+        border-style: groove;
     }
 
     .menu {
