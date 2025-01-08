@@ -48,16 +48,37 @@
         line-height: 78px;
         font-weight: 400;
         padding: 100px 140px 35px 0;
+        span{
+            @extend %title;
+            font-size: 66px;
+            line-height: 78px;
+            color: $content;
+        }
     }
 
     &__info-img {
         right: 0;
         object-fit: cover;
         display: block;
-        border: 15px solid linear-gradient(to right, red, orange);
+        border: 15px solid #fff;
         border-radius: 120px;
         border-style: groove;
     }
+    &__info-link__arrow{
+        display: inline-block;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+        margin-left: 10px;
+    }
+    &__info-link{
+        font-family: "Poppins", serif;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color: $default;
+    }
+
 
     .menu {
         &__list {
