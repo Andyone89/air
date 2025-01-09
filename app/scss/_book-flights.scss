@@ -1,0 +1,61 @@
+.book-flights{
+    width: 1110px;
+    height: 266px;
+    border-radius: 12px;
+    background-color: aquamarine;
+    margin: 0 auto;
+    transform: translatey(-40%);
+
+    &__list{
+        display: flex;
+        justify-content: start;
+    }
+
+    &__item{
+        display: flex;
+        padding: 25px 5px 15px 15px;
+    }
+
+    &__img{ 
+       padding-left: 10px;
+       padding-top: 6px;
+    }
+    &__wrapper{
+        display: flex;
+    }
+
+    &__from{
+        margin-left: 15px;
+    }
+    &__from,
+    &__to{
+        width: 300px;
+        height: 117px;
+        border: 1px solid #AAAAAA;
+        border-radius: 10px;
+        text-align: left;
+
+    }
+    &__from-text,
+    &__to-text{
+        font-family: "Poppins", serif;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        padding: 10px 0 10px 15px;
+        color: $default;
+        opacity: 60%;
+    }
+    &__from-title,
+    &__to-title{
+        font-family: "Poppins", serif;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 600;
+        padding-left: 14px;
+    }
+    &__icon{
+      padding: 45px 6px 0;
+    }
+}
+

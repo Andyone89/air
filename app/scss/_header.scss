@@ -37,7 +37,7 @@
 
     &__info {
         padding-top: 100px;
-        padding-bottom: 100px;
+        padding-bottom: 140px;
         display: flex;
         justify-content: space-between;
     }
@@ -60,9 +60,9 @@
         right: 0;
         object-fit: cover;
         display: block;
-        border: 15px solid #fff;
-        border-radius: 120px;
-        border-style: groove;
+        border: 10px double #fff;
+        border-radius: 130px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     }
     &__info-link__arrow{
         display: inline-block;
