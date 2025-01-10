@@ -1,6 +1,7 @@
 .header {
     background-image: url(/app/images/header/header-bg.jpg);
     background-size: 100% 100%;
+    
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -34,53 +35,11 @@
         border: none;
         cursor: pointer;
     }
-
-    &__info {
-        padding-top: 100px;
-        padding-bottom: 140px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__info-title {
-        font-family: "Roboto", serif;
-        font-size: 66px;
-        line-height: 78px;
-        font-weight: 400;
-        padding: 100px 140px 35px 0;
-        span{
-            @extend %title;
-            font-size: 66px;
-            line-height: 78px;
-            color: $content;
-        }
-    }
-
-    &__info-img {
-        right: 0;
-        object-fit: cover;
-        display: block;
-        border: 10px double #fff;
-        border-radius: 130px;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    }
-    &__info-link__arrow{
-        display: inline-block;
-        vertical-align: middle;
-        width: 16px;
-        height: 16px;
-        margin-left: 10px;
-    }
-    &__info-link{
-        font-family: "Poppins", serif;
-            font-size: 16px;
-            line-height: 24px;
-            font-weight: 400;
-            color: $default;
-    }
-
+}
 
     .menu {
+        background-color: transparent;
+
         &__list {
             display: flex;
 
@@ -105,4 +64,3 @@
             transition: all 0.3s;
         }
     }
-}
