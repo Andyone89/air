@@ -19,6 +19,23 @@
     &__item {
         display: flex;
         padding: 25px 5px 15px 15px;
+        
+    }
+    &__child{
+        position: relative;
+        width: 150px;
+        height: 160px;
+        left: 0;
+        top: 30px;
+        background-color: $content;
+        a{
+            color: #fff;
+        }
+        li{
+            text-align: center;
+            padding-bottom: 20px;
+            padding-top: 10px;
+        }
     }
 
     &__link {
