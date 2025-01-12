@@ -24,34 +24,45 @@
 
     &__child {
         position: absolute;
+        font-family: "Poppins", serif;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
         width: 130px;
         height: auto;
         top: 50px;
         z-index: 999;
-        left: -400px;
+        left: -9999px;
+
         a {
             color: #fff;
+            padding: 10px;
         }
-        a:hover{
+
+        a:hover {
             background-color: transparent;
         }
+
         li {
             background-color: $content;
             text-align: center;
             padding-bottom: 10px;
             padding-top: 10px;
             border: 1px solid #fff;
-            border-radius: 10px; 
+            border-radius: 6px;
         }
-        li:hover{
+
+        li:hover {
             background-color: #442456;
-            transition: all .3s;
         }
     }
- 
-    &__item:hover .book-flights__child{
+
+    &__item:hover .book-flights__child {
         left: auto;
-      }
+        width: auto;
+        transition: all .5s;
+    }
+
     &__link {
         font-family: "Poppins", serif;
         font-size: 14px;
@@ -155,6 +166,7 @@
     margin: 0 auto;
     border: 1px solid #AAAAAA;
     border-radius: 10px;
+    position: relative;
 
     &__departure,
     &__return {
@@ -184,7 +196,25 @@
         width: 24px;
         height: 24px;
         margin-top: 43px;
+        cursor: pointer;
 
+    }
+
+    &__img:hover .calendar__departure-click {
+        width: auto;
+    }
+
+    &__departure-click {
+        background-color: $content;
+        color: #fff;
+        width: auto;
+        height: 24px;
+        margin-left: 58px;
+        top: 70px;
+        border: none;
+        position: absolute;
+        z-index: 999;
+        left: -9999px;
     }
 
     &__departure-links,
