@@ -1,5 +1,8 @@
 .header {
-    margin-bottom: 40px;
+    padding-top: 40px;
+
+    
+
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -24,11 +27,7 @@
         height: 31px;
         border-radius: 5px;
         background-color: $content;
-        color: #fff;
-        font-family: "Poppins", serif;
-        font-size: 14px;
-        line-height: 21px;
-        font-weight: 400;
+        color: $white;
         border: none;
         cursor: pointer;
     }
@@ -48,11 +47,7 @@
         }
 
         &__list-link {
-            font-family: "Poppins", serif;
-            font-size: 14px;
-            line-height: 21px;
-            font-weight: 400;
-            color: #181818;
+            color: $dark;
             cursor: pointer;
         }
 
