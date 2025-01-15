@@ -17,12 +17,12 @@
         position: relative;
     }
 
-    &__item {
+    &__list-item {
         display: flex;
         padding: 25px 5px 15px 15px;
     }
 
-    &__child {
+    &__list-child {
         position: absolute;
         width: 130px;
         height: auto;
@@ -53,18 +53,18 @@
         }
     }
 
-    &__item:hover .book-flights__child {
+    &__list-item:hover .book-flights__child {
         left: auto;
         width: auto;
         transition: all .5s;
     }
 
-    &__link {
+    &__list-link {
         font-weight: 600;
         color: $default;
     }
 
-    &__img {
+    &__list-img {
         padding-left: 10px;
         padding-top: 6px;
     }
