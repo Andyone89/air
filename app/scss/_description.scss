@@ -1,0 +1,42 @@
+.description {
+    &__top-title {
+        text-align: center;
+        @extend %title;
+    }
+
+    &__top {
+        display: flex;
+        background-image: url(../images/description/description-bg-left.png);
+        background-repeat: no-repeat;
+    }
+
+    &__top-img {
+        padding: 100px 20px 50px 30px;
+    }
+
+    &__top-info {
+        padding-top: 100px;
+        padding-left: 20px;
+    }
+
+    &__top-name {
+        text-align: left;
+        padding-top: 70px;
+        padding-bottom: 30px;
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000000;
+    }
+
+    &__top-text {
+        text-align: justify;
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: $default;
+
+    }
+}
