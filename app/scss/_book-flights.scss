@@ -7,7 +7,7 @@
     width: 1110px;
     height: 266px;
     border-radius: 12px;
-    background-color: #fff;
+    background-color: $white;
     margin: 0 auto;
     transform: translatey(-40%);
 
@@ -17,17 +17,13 @@
         position: relative;
     }
 
-    &__item {
+    &__list-item {
         display: flex;
         padding: 25px 5px 15px 15px;
     }
 
-    &__child {
+    &__list-child {
         position: absolute;
-        font-family: "Poppins", serif;
-        font-size: 14px;
-        line-height: 21px;
-        font-weight: 400;
         width: 130px;
         height: auto;
         top: 50px;
@@ -35,7 +31,7 @@
         left: -9999px;
 
         a {
-            color: #fff;
+            color: $white;
             padding: 10px;
         }
 
@@ -48,7 +44,7 @@
             text-align: center;
             padding-bottom: 10px;
             padding-top: 10px;
-            border: 1px solid #fff;
+            border: 1px solid $white;
             border-radius: 6px;
         }
 
@@ -57,21 +53,18 @@
         }
     }
 
-    &__item:hover .book-flights__child {
+    &__list-item:hover .book-flights__list-child {
         left: auto;
         width: auto;
         transition: all .5s;
     }
 
-    &__link {
-        font-family: "Poppins", serif;
-        font-size: 14px;
-        line-height: 21px;
+    &__list-link {
         font-weight: 600;
         color: $default;
     }
 
-    &__img {
+    &__list-img {
         padding-left: 10px;
         padding-top: 6px;
     }
@@ -96,10 +89,6 @@
 
     &__from-text,
     &__to-text {
-        font-family: "Poppins", serif;
-        font-size: 14px;
-        line-height: 21px;
-        font-weight: 400;
         padding: 10px 0 10px 15px;
         color: $default;
         opacity: 60%;
@@ -109,7 +98,7 @@
     &__to-title {
         font-family: "Poppins", serif;
         font-size: 24px;
-        line-height: 36px;
+        line-height: 1.5;
         font-weight: 600;
         padding-left: 14px;
     }
@@ -119,10 +108,6 @@
     }
 
     &__requirements {
-        font-family: Poppins;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 21px;
         text-align: left;
         text-decoration-line: underline;
         color: $default;
@@ -143,10 +128,8 @@
         border-radius: 10px;
         border: none;
         color: #fff;
-        font-family: Poppins;
         font-size: 18px;
-        font-weight: 400;
-        line-height: 27px;
+        line-height: 1.5;
         text-align: left;
         padding-left: 20px;
         cursor: pointer;
@@ -154,7 +137,7 @@
 
     &__btn-arrow {
         transform: translateX(-50px);
-        color: #fff;
+        color: $white;
         cursor: pointer;
     }
 }
@@ -175,20 +158,14 @@
 
     &__departure-name,
     &__return-name {
-        font-family: "Poppins", serif;
-        font-size: 14px;
-        line-height: 21px;
-        font-weight: 400;
-        color: $default;
         opacity: 60%;
         padding-bottom: 6px;
     }
 
     &__departure-title,
     &__return-title {
-        font-family: "Poppins", serif;
         font-size: 24px;
-        line-height: 36px;
+        line-height: 1.5;
         font-weight: 600;
     }
 
@@ -198,21 +175,40 @@
         margin-top: 43px;
         cursor: pointer;
     }
-        
-    &__departure-click {
-        background-color: $content;
-        color: #fff;
+
+    &__img:hover + .calendar__departure-click {
+        transform: translateX(0);
+       
+    }
+    &__img:hover + .calendar__return-click {
+        transform: translateX(0);
+    }
+
+    &__departure-click{
+        background-color: #d6d1d1;
+        color: $default;
         width: auto;
-        height: 24px;
+        height: 34px;
         margin-left: 58px;
         top: 130px;
         border: none;
         position: absolute;
         z-index: 999;
-        left: -9999px;
+        transform: translateX(-9999px);
     }
-    &__img:hover ~ .calendar__departure-click{
-         left: 0;
+    &__return-click{
+       background-color: #d6d1d1;
+        color: $default;
+        width: auto;
+        height: 34px;
+        right: 0;
+      margin-left: 20px;
+        margin-right: 24px;
+        top: 70px;
+        border: none;
+        position: absolute;
+        z-index: 999;
+        transform: translateX(-9999px);
     }
 
     &__departure-links,

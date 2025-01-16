@@ -19,7 +19,7 @@
     <div class="container">
       <div class="header__inner">
         <a href="#" class="header__logo-link">
-          <img src="/app/images/header/header-logo.png" alt="logo" class="header__logo-img">
+          <img width="139" height="37" loading="lazy" src="/app/images/header/header-logo.png" alt="logo" class="header__logo-img">
         </a>
         <nav class="menu">
           <ul class="menu__list">
@@ -64,7 +64,16 @@
           </button>
         </div>
       </div>
+    </div>
+  </header>
+
+
+  <div class="wrapper">
+    <main class="main">
+
       <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
         <div class="hero__links">
           <h1 class="hero__title">
             Enjoy <span>RESERVED</span>
@@ -74,50 +83,47 @@
             Explore Now
           </a>
           <a href="#" class="hero__link-img">
-            <img src="/app/images/header/arrow.svg" alt="arrow" class="hero__link-arrow">
+            <img width="16" height="16" loading="lazy" src="/app/images/header/arrow.svg" alt="arrow" class="hero__link-arrow">
           </a>
         </div>
-        <img class="hero__link-image" src="/app/images/header/header-window.jpg" alt="window">
-      </section>
+        <img 
+        width="354" height="444" loading="lazy" class="hero__link-image" src="/app/images/header/header-window.jpg" alt="window">
+      </div>
     </div>
-  </header>
-
-
-  <div class="wrapper">
-    <main class="main">
+      </section>
 
 
       <div class="book-flights">
         <div class="container">
           <ul class="book-flights__list">
-            <li class="book-flights__item">
-              <a href="#" class="book-flights__link">
+            <li class="book-flights__list-item">
+              <a href="#" class="book-flights__list-link">
                 Round Trip
               </a>
-              <img src="./images/book-flights/vector1.svg" alt="arrow" class="book-flights__img">
-              <ul class="book-flights__child">
+              <img loading="lazy" src="./images/book-flights/vector1.svg" alt="arrow" class="book-flights__list-img">
+              <ul class="book-flights__list-child">
                 <li><a href="#"> Round Trip</a></li>
                 <li><a href="#">Flight Type</a></li>
                 <li><a href="#">Person</a></li>
               </ul>
             </li>
-            <li class="book-flights__item">
-              <a href="#" class="book-flights__link">
+            <li class="book-flights__list-item">
+              <a href="#" class="book-flights__list-link">
                 Flight Type
               </a>
-              <img src="./images/book-flights/vector1.svg" alt="arrow" class="book-flights__img">
-              <ul class="book-flights__child">
+               <img loading="lazy" src="./images/book-flights/vector1.svg" alt="arrow" class="book-flights__list-img">
+               <ul class="book-flights__list-child">
                 <li><a href="#">Round Trip</a></li>
                 <li><a href="#">Flight Type</a></li>
                 <li><a href="#">Person</a></li>
               </ul>
             </li>
-            <li class="book-flights__item">
-              <a href="#" class="book-flights__link">
+            <li class="book-flights__list-item">
+              <a href="#" class="book-flights__list-link">
                 Person
               </a>
-              <img src="./images/book-flights/vector1.svg" alt="arrow" class="book-flights__img">
-              <ul class="book-flights__child">
+              <img loading="lazy" src="./images/book-flights/vector1.svg" alt="arrow" class="book-flights__list-img">
+              <ul class="book-flights__list-child">
                 <li><a href="#"> Round Trip</a></li>
                 <li><a href="#">Flight Type</a></li>
                 <li><a href="#">Person</a></li>
@@ -137,7 +143,7 @@
               </p>
             </div>
             <a class="book-flights__icon-link" href="#">
-              <img src="./images/book-flights/vector.svg" alt="arrow" class="book-flights__icon">
+              <img loading="lazy" src="./images/book-flights/vector.svg" alt="arrow" class="book-flights__icon">
             </a>
 
             <div class="book-flights__to">
@@ -164,13 +170,14 @@
                   <a href="#" class="calendar__link">Next</a>
                 </div>
               </div>
-              <img src="./images/book-flights/calendar.svg" alt="calendar" class="calendar__img">
+              <img loading="lazy" src="./images/book-flights/calendar.svg" alt="calendar" class="calendar__img">
 
-              <input class="calendar__departure-click" type="date" name="begin" placeholder="dd-mm-yyyy" value=""
-                min="1997-01-01" max="2030-12-31">
+               <input class="calendar__departure-click" type="date" name="begin" 
+                   placeholder="dd-mm-yyyy" value="" 
+                   min="1997-01-01" max="2030-12-31">
 
               <div class="calendar__return">
-                <div class="calendar__return-returmn">
+                <div class="calendar__return-return">
                   <p class="calendar__return-name">
                     Return
                   </p>
@@ -183,7 +190,12 @@
                   </div>
                 </div>
               </div>
-              <img src="./images/book-flights/calendar.svg" alt="calendar" class="calendar__img">
+              <img loading="lazy" src="./images/book-flights/calendar.svg" alt="calendar" class="calendar__img">
+
+              <input class="calendar__return-click" type="date" name="begin" 
+              placeholder="dd-mm-yyyy" value="" 
+              min="1997-01-01" max="2030-12-31">
+
             </div>
           </div>
           <a href="#" class="book-flights__requirements">Add Requirements</a>
