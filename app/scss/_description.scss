@@ -4,7 +4,7 @@
 
     background-repeat: no-repeat;
     background-position-x: left, right;
-    background-position-y: 12%, bottom;
+    background-position-y: 14%, bottom;
 
 
     &__top-title {
@@ -51,7 +51,6 @@
     &__bottom {
         display: flex;
         flex-direction: row-reverse;
-        padding-top: 120px;
         padding-bottom: 65px;
         margin-bottom: 100px;
     }
