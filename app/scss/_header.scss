@@ -1,7 +1,6 @@
 .header {
-    background-image: url(/app/images/header/header-bg.jpg);
-    background-size: cover;
-
+    position: sticky;
+   padding-top: 30px;
     
     &__inner {
         display: flex;
@@ -16,7 +15,6 @@
 
     &__button-link {
         margin-right: 15px;
-
         color: #181818;
         cursor: pointer;
         padding: 6px 0;

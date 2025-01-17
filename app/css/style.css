@@ -90,8 +90,8 @@ body {
 }
 
 .header {
-  background-image: url(/app/images/header/header-bg.jpg);
-  background-size: cover;
+  position: sticky;
+  padding-top: 30px;
 }
 .header__inner {
   display: flex;
@@ -336,10 +336,9 @@ body {
   background-image: url(/app/images/header/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin-top: -72px;
-  padding-top: 100px;
+  margin-top: -70px;
+  padding-top: 120px;
   padding-bottom: 140px;
-  display: flex;
 }
 .hero__wrapper {
   display: flex;
