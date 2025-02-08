@@ -1,20 +1,30 @@
 .description {
-    &__top-title {
+    background-image: url(../images/description/description-bg-left.png),
+        url(../images/description/description-bg-right.png);
+
+    background-repeat: no-repeat;
+    background-position-x: left, right;
+    background-position-y: 14%, bottom;
+
+
+    &__title {
         text-align: center;
         @extend %title;
     }
 
     &__top {
         display: flex;
-        background-image: url(../images/description/description-bg-left.png);
-        background-repeat: no-repeat;
     }
 
     &__top-img {
-        padding: 100px 20px 50px 30px;
+        border-radius: 15px;
+        object-fit: cover;
+        margin: 100px 10px 150px 30px;
     }
 
     &__top-info {
+        width: 463px;
+        height: 245px;
         padding-top: 100px;
         padding-left: 20px;
     }
@@ -23,20 +33,53 @@
         text-align: left;
         padding-top: 70px;
         padding-bottom: 30px;
-        font-family: "Poppins", serif;
         font-weight: 600;
         font-size: 24px;
-        line-height: 36px;
+        line-height: 1.5;
         color: #000000;
     }
 
     &__top-text {
         text-align: justify;
-        font-family: "Poppins", serif;
-        font-weight: 600;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
         color: $default;
+        opacity: 60%;
+        padding-left: 10px;
+    }
 
+    &__bottom {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-bottom: 65px;
+        margin-bottom: 100px;
+    }
+
+    &__bottom-wrapper {
+        width: 463px;
+        height: 245px;
+        margin: 90px 20px 50px 0;
+        text-align: left;
+    }
+
+    &__bottom-img {
+        border-radius: 15px;
+    }
+
+    &__bottom-name {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.5;
+        padding-bottom: 30px;
+    }
+
+    &__bottom-text {
+        font-family: Poppins;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+        color: $default;
+        opacity: 60%;
+        margin-right: 20px;
     }
 }
