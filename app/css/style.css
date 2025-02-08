@@ -1,4 +1,4 @@
-.description__top-title {
+.specifications__title, .description__title {
   font-family: Poppins;
   font-size: 36px;
   font-weight: 700;
@@ -384,7 +384,7 @@ body {
   background-position-x: left, right;
   background-position-y: 14%, bottom;
 }
-.description__top-title {
+.description__title {
   text-align: center;
 }
 .description__top {
@@ -448,4 +448,28 @@ body {
   color: #151515;
   opacity: 60%;
   margin-right: 20px;
+}
+
+.specifications {
+  background-image: url(../images/specifications/plane.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.specifications__title {
+  text-align: center;
+}
+.specifications__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 30px;
+}
+.specifications__item {
+  width: 370px;
+  height: 268px;
+  border-radius: 12px;
+  margin: 0 auto;
+  box-shadow: 0px 1px 3px 0px rgba(19, 10, 46, 0.1294117647);
+  box-shadow: 0px 3px 14px 0px rgba(19, 10, 46, 0.031372549);
+  box-shadow: 0px 8px 32px 0px rgba(19, 10, 46, 0.0705882353);
+  box-shadow: 0px 30px 84px 0px rgba(19, 10, 46, 0.0784313725);
 }/*# sourceMappingURL=style.css.map */
