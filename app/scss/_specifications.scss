@@ -5,6 +5,10 @@
     padding-bottom: 70px;
 
     &__title {
+        background-image: url(../images/ellipse.png);
+        background-repeat: no-repeat;
+        background-position: center top 10%;
+    
         text-align: center;
         @extend %title;
         padding-bottom: 70px;
@@ -33,7 +37,7 @@
     &__img {
         margin: 40px auto 20px;
     }
-    
+
     &__text {
         font-size: 16px;
         line-height: 1.5;
