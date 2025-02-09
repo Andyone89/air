@@ -1,4 +1,7 @@
 .header {
+    position: sticky;
+   padding-top: 30px;
+    
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -12,7 +15,6 @@
 
     &__button-link {
         margin-right: 15px;
-
         color: #181818;
         cursor: pointer;
         padding: 6px 0;

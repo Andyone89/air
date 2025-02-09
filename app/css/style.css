@@ -1,3 +1,10 @@
+.description__top-title {
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -82,6 +89,10 @@ body {
   padding: 0 15px;
 }
 
+.header {
+  position: sticky;
+  padding-top: 30px;
+}
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -247,12 +258,12 @@ body {
 
 .calendar {
   display: flex;
+  position: relative;
   width: 381px;
   height: 117px;
   margin: 0 auto;
   border: 1px solid #AAAAAA;
   border-radius: 10px;
-  position: relative;
 }
 .calendar__departure, .calendar__return {
   padding: 10px 20px;
@@ -283,7 +294,7 @@ body {
   color: #151515;
   width: auto;
   height: 34px;
-  margin-left: 58px;
+  margin-left: 74px;
   top: 70px;
   border: none;
   position: absolute;
@@ -325,10 +336,9 @@ body {
   background-image: url(/app/images/header/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin-top: -72px;
-  padding-top: 100px;
+  margin-top: -70px;
+  padding-top: 120px;
   padding-bottom: 140px;
-  display: flex;
 }
 .hero__wrapper {
   display: flex;
@@ -366,4 +376,76 @@ body {
 }
 .hero__link {
   color: #151515;
+}
+
+.description {
+  background-image: url(../images/description/description-bg-left.png), url(../images/description/description-bg-right.png);
+  background-repeat: no-repeat;
+  background-position-x: left, right;
+  background-position-y: 14%, bottom;
+}
+.description__top-title {
+  text-align: center;
+}
+.description__top {
+  display: flex;
+}
+.description__top-img {
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 100px 10px 150px 30px;
+}
+.description__top-info {
+  width: 463px;
+  height: 245px;
+  padding-top: 100px;
+  padding-left: 20px;
+}
+.description__top-name {
+  text-align: left;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #000000;
+}
+.description__top-text {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #151515;
+  opacity: 60%;
+  padding-left: 10px;
+}
+.description__bottom {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 65px;
+  margin-bottom: 100px;
+}
+.description__bottom-wrapper {
+  width: 463px;
+  height: 245px;
+  margin: 90px 20px 50px 0;
+  text-align: left;
+}
+.description__bottom-img {
+  border-radius: 15px;
+}
+.description__bottom-name {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+.description__bottom-text {
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #151515;
+  opacity: 60%;
+  margin-right: 20px;
 }/*# sourceMappingURL=style.css.map */
