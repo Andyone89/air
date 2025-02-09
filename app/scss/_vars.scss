@@ -2,10 +2,12 @@ $default: #151515;
 $content: #656293;
 $white: #fff;
 $dark: #181818;
+$title: #000000;
 
 %title {
     font-family: Poppins;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.5;
+    color: $title;
 }
