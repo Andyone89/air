@@ -1,4 +1,5 @@
-.description__top-title {
+.charters__title,
+.description__title {
   font-family: Poppins;
   font-size: 36px;
   font-weight: 700;
@@ -147,7 +148,7 @@ body {
   border-radius: 12px;
   background-color: #fff;
   margin: 0 auto;
-  transform: translatey(-40%);
+  transform: translateY(-40%);
 }
 .book-flights__list {
   display: flex;
@@ -204,19 +205,22 @@ body {
   margin-left: 15px;
   margin-bottom: 15px;
 }
-.book-flights__from, .book-flights__to {
+.book-flights__from,
+.book-flights__to {
   width: 300px;
   height: 117px;
-  border: 1px solid #AAAAAA;
+  border: 1px solid #aaaaaa;
   border-radius: 10px;
   text-align: left;
 }
-.book-flights__from-text, .book-flights__to-text {
+.book-flights__from-text,
+.book-flights__to-text {
   padding: 10px 0 10px 15px;
   color: #151515;
   opacity: 60%;
 }
-.book-flights__from-title, .book-flights__to-title {
+.book-flights__from-title,
+.book-flights__to-title {
   font-family: "Poppins", serif;
   font-size: 24px;
   line-height: 1.5;
@@ -262,17 +266,20 @@ body {
   width: 381px;
   height: 117px;
   margin: 0 auto;
-  border: 1px solid #AAAAAA;
+  border: 1px solid #aaaaaa;
   border-radius: 10px;
 }
-.calendar__departure, .calendar__return {
+.calendar__departure,
+.calendar__return {
   padding: 10px 20px;
 }
-.calendar__departure-name, .calendar__return-name {
+.calendar__departure-name,
+.calendar__return-name {
   opacity: 60%;
   padding-bottom: 6px;
 }
-.calendar__departure-title, .calendar__return-title {
+.calendar__departure-title,
+.calendar__return-title {
   font-size: 24px;
   line-height: 1.5;
   font-weight: 600;
@@ -315,7 +322,8 @@ body {
   z-index: 999;
   transform: translateX(-9999px);
 }
-.calendar__departure-links, .calendar__return-links {
+.calendar__departure-links,
+.calendar__return-links {
   display: flex;
   justify-content: space-between;
   padding-top: 5px;
@@ -361,7 +369,7 @@ body {
 .hero__link-image {
   right: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
   border: 15px solid #fff;
   border-radius: 130px;
@@ -379,12 +387,13 @@ body {
 }
 
 .description {
-  background-image: url(../images/description/description-bg-left.png), url(../images/description/description-bg-right.png);
+  background-image: url(../images/description/description-bg-left.png),
+    url(../images/description/description-bg-right.png);
   background-repeat: no-repeat;
   background-position-x: left, right;
   background-position-y: 14%, bottom;
 }
-.description__top-title {
+.description__title {
   text-align: center;
 }
 .description__top {
@@ -393,7 +402,7 @@ body {
 .description__top-img {
   border-radius: 15px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 100px 10px 150px 30px;
 }
 .description__top-info {
@@ -448,4 +457,54 @@ body {
   color: #151515;
   opacity: 60%;
   margin-right: 20px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.charters {
+  position: relative;
+  margin-bottom: 500px;
+}
+.charters::after {
+  content: "";
+  background-image: url(../images/charters/bg-charters.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  opacity: 0.2;
+  left: 650px;
+  right: 0;
+  top: 85px;
+  bottom: 0;
+  z-index: -1;
+}
+.charters__title {
+  text-align: center;
+}
+.charters__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+.charters__item {
+  text-align: center;
+  width: 255px;
+  height: 251px;
+  border-radius: 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 1px 3px 0px rgba(19, 10, 46, 0.1294117647);
+  box-shadow: 0px 3px 14px 0px rgba(19, 10, 46, 0.031372549);
+  box-shadow: 0px 8px 32px 0px rgba(19, 10, 46, 0.0705882353);
+  box-shadow: 0px 30px 84px 0px rgba(19, 10, 46, 0.0784313725);
+}
+.charters__img {
+  display: inline-block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.charters__text {
+  padding-top: 14px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #151515;
+} /*# sourceMappingURL=style.css.map */
