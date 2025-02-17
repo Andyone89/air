@@ -1,4 +1,4 @@
-.charters__title, .description__title {
+.specifications__title, .charters__title, .description__title {
   font-family: Poppins;
   font-size: 36px;
   font-weight: 700;
@@ -333,7 +333,7 @@ body {
 }
 
 .hero {
-  background-image: url(/app/images/header/header-bg.jpg);
+  background-image: url(../images/header/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin-top: -70px;
@@ -382,6 +382,9 @@ body {
   background-position-y: 14%, bottom;
 }
 .description__title {
+  background-image: url(../images/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: center top 45%;
   text-align: center;
 }
 .description__top {
@@ -464,6 +467,9 @@ body {
   z-index: -1;
 }
 .charters__title {
+  background-image: url(../images/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: center top 45%;
   text-align: center;
 }
 .charters__wrapper {
@@ -495,4 +501,47 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #151515;
+}
+
+.specifications {
+  background-image: url(../images/specifications/plane.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 70px;
+}
+.specifications__title {
+  background-image: url(../images/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: center top 10%;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.specifications__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+  -moz-column-gap: 340px;
+       column-gap: 340px;
+}
+.specifications__item {
+  text-align: center;
+  width: 370px;
+  height: 268px;
+  border-radius: 12px;
+  box-shadow: 0px 1px 3px 0px rgba(19, 10, 46, 0.1294117647);
+  box-shadow: 0px 3px 14px 0px rgba(19, 10, 46, 0.031372549);
+  box-shadow: 0px 8px 32px 0px rgba(19, 10, 46, 0.0705882353);
+  box-shadow: 0px 30px 84px 0px rgba(19, 10, 46, 0.0784313725);
+}
+.specifications__img {
+  margin: 40px auto 20px;
+}
+.specifications__text {
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.6;
+  width: 266px;
+  height: auto;
+  margin: 20px auto 0;
 }/*# sourceMappingURL=style.css.map */

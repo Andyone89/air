@@ -58,7 +58,7 @@ function styles() {
         overrideBrowserslist: ['last 10 version'],
         grid: true
       }))
-      .pipe(dest('css'))
+      .pipe(dest('./'))
       .pipe(browserSync.stream())
 }
 
@@ -68,7 +68,7 @@ function build() {
     'fonts/**/*',
     'js/main.min.js',
     '*.html'
-  ], {base: 'air'})
+  ], {base: './'})
     .pipe(dest('dist'))
 }
 
