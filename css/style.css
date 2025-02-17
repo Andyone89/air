@@ -333,7 +333,7 @@ body {
 }
 
 .hero {
-  background-image: url(/app/images/header/header-bg.jpg);
+  background-image: url(../images/header/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin-top: -70px;
