@@ -16,6 +16,9 @@
     }
 
     &__title {
+        background-image: url(../images/ellipse.png);
+        background-repeat: no-repeat;
+        background-position: center top 45%;
         text-align: center;
         @extend %title;
     }
