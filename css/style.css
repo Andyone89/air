@@ -151,7 +151,7 @@ body {
 }
 .book-flights__list {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   position: relative;
 }
 .book-flights__list-item {
@@ -483,9 +483,9 @@ body {
   width: 255px;
   height: 251px;
   border-radius: 12px;
-  color: #fff;
   position: relative;
   z-index: 1;
+  background-color: #fff;
   box-shadow: 0px 1px 3px 0px rgba(19, 10, 46, 0.1294117647);
   box-shadow: 0px 3px 14px 0px rgba(19, 10, 46, 0.031372549);
   box-shadow: 0px 8px 32px 0px rgba(19, 10, 46, 0.0705882353);
@@ -520,7 +520,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  justify-items: center;
+  justify-self: center;
   -moz-column-gap: 340px;
        column-gap: 340px;
 }
