@@ -58,13 +58,13 @@ function styles() {
         overrideBrowserslist: ['last 10 version'],
         grid: true
       }))
-      .pipe(dest('css'))
+      .pipe(dest('./'))
       .pipe(browserSync.stream())
 }
 
 function build() {
   return src([
-    'css/style.min.css',
+    './style.min.css',
     'fonts/**/*',
     'js/main.min.js',
     '*.html'
