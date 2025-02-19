@@ -1,0 +1,57 @@
+.membership {
+    &__title{
+        background-image: url(../images/ellipse.png);
+        background-repeat: no-repeat;
+        background-position: center top 45%;
+        text-align: center;
+        @extend %title;
+    }
+    &__wrapper{
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    &__item{
+        background-color: $cards;
+        width: 400px;
+        height: 572px;
+        margin-right: 25px;
+    }
+    
+    &__item-name{
+        font-size: 32px;
+        line-height: 1.25;
+        font-weight: 700;
+        text-align: left;
+        padding: 20px 0 40px 20px;
+    }
+    &__item-info{
+        font-size: 22px;
+        line-height: 1.5;
+        color: #A9A9AA;
+        padding-left: 20px;
+        padding-bottom: 25px;
+    }
+    &__item-wrapper{
+        padding-left: 50px;
+    }
+    &__item-text{
+        font-size: 16px;
+        line-height: 1.5;
+        padding-bottom: 15px;
+        position: relative;
+        &::after{
+            content: "";
+            background-image: url(../images/Vector.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 2px;
+            left: -30px;
+            bottom: 0;
+            right: 0;
+
+        }
+    }
+    
+
+}
