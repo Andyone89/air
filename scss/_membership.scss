@@ -1,4 +1,5 @@
 .membership {
+    padding-bottom: 100px;
     &__title {
         background-image: url(../images/ellipse.png);
         background-repeat: no-repeat;
@@ -18,6 +19,34 @@
         width: 400px;
         height: 572px;
         margin-right: 25px;
+        text-align: center;
+    }
+    &__item:hover{
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        background-color: $content;
+        color: $white;
+        width: 400px;
+        height: 572px;
+        margin-right: 25px;
+        text-align: center;
+    }
+    &__item:nth-child(1){
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    &__item:nth-child(1)::after{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    &__item:last-child{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    &__item:last-child::after{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
     &__item-name {
@@ -34,6 +63,7 @@
         color: #A9A9AA;
         padding-left: 20px;
         padding-bottom: 25px;
+        text-align: left;
     }
 
     &__item-wrapper {
@@ -45,6 +75,7 @@
         line-height: 1.5;
         padding-bottom: 15px;
         position: relative;
+        text-align: left;
     }
 
     &__item-text::after {
@@ -63,6 +94,7 @@
         padding-block: 70px 15px;
         font-size: 18px;
         line-height: 2.22;
+        text-align: left;
         position: relative;
 
         b {

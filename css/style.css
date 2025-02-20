@@ -547,6 +547,9 @@ body {
   margin: 20px auto 0;
 }
 
+.membership {
+  padding-bottom: 100px;
+}
 .membership__title {
   background-image: url(../images/ellipse.png);
   background-repeat: no-repeat;
@@ -563,6 +566,34 @@ body {
   width: 400px;
   height: 572px;
   margin-right: 25px;
+  text-align: center;
+}
+.membership__item:hover {
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  background-color: #656293;
+  color: #fff;
+  width: 400px;
+  height: 572px;
+  margin-right: 25px;
+  text-align: center;
+}
+.membership__item:nth-child(1) {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.membership__item:nth-child(1)::after {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.membership__item:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.membership__item:last-child::after {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .membership__item-name {
   font-size: 32px;
@@ -577,6 +608,7 @@ body {
   color: #A9A9AA;
   padding-left: 20px;
   padding-bottom: 25px;
+  text-align: left;
 }
 .membership__item-wrapper {
   padding-left: 50px;
@@ -586,6 +618,7 @@ body {
   line-height: 1.5;
   padding-bottom: 15px;
   position: relative;
+  text-align: left;
 }
 .membership__item-text::after {
   content: "";
@@ -602,6 +635,7 @@ body {
   padding-block: 70px 15px;
   font-size: 18px;
   line-height: 2.22;
+  text-align: left;
   position: relative;
 }
 .membership__item-price b {
