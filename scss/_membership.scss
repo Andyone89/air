@@ -20,23 +20,24 @@
         height: 572px;
         margin-right: 25px;
         text-align: center;
+        position: relative;
     }
     &__item:hover{
-        bottom: 20px;
-        left: 0;
-        right: 0;
         background-color: $content;
         color: $white;
         width: 400px;
         height: 572px;
         margin-right: 25px;
-        text-align: center;
+        bottom: 30px;
+        transition: all 0.5s;
+        border-radius: 20px;
+
+        button{
+            background-color: $white;
+            color: $default;
+        }
     }
     &__item:nth-child(1){
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-    }
-    &__item:nth-child(1)::after{
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
@@ -44,11 +45,6 @@
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
     }
-    &__item:last-child::after{
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-    }
-
     &__item-name {
         font-size: 32px;
         line-height: 1.25;
@@ -67,10 +63,11 @@
     }
 
     &__item-wrapper {
-        padding-left: 50px;
+        padding-left: 20px;
     }
 
     &__item-text {
+        display: flex;
         font-size: 16px;
         line-height: 1.5;
         padding-bottom: 15px;
@@ -78,16 +75,12 @@
         text-align: left;
     }
 
-    &__item-text::after {
-        content: '';
-        background-image: url(../images/Vector.svg);
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 2px;
-        left: -30px;
-        bottom: 0;
-        right: 0;
+    &__item-text-svg{
+        margin-right: 8px;
+        margin-bottom: 3px;
     }
+
+
 
     &__item-price {
         padding-left: 20px;
@@ -116,7 +109,7 @@
     }
     &__item-btn{
         width: 352px;
-        height: 64px;
+        height: 62px;
         border-style: none;
         border-radius: 12px;
         background-color: $content;
@@ -127,6 +120,4 @@
         text-align: center;
         cursor: pointer;
     }
-
-
 }
