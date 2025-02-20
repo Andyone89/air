@@ -1,8 +1,9 @@
-.specifications__title, .charters__title, .description__title {
+.membership__title, .specifications__title, .charters__title, .description__title {
   font-family: Poppins;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.5;
+  color: #000000;
 }
 
 html {
@@ -452,7 +453,7 @@ body {
 
 .charters {
   position: relative;
-  margin-bottom: 500px;
+  margin-bottom: 50px;
 }
 .charters::after {
   content: "";
@@ -544,4 +545,90 @@ body {
   width: 266px;
   height: auto;
   margin: 20px auto 0;
+}
+
+.membership__title {
+  background-image: url(../images/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: center top 45%;
+  text-align: center;
+}
+.membership__wrapper {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.membership__item {
+  background-color: #f5f5f5;
+  width: 400px;
+  height: 572px;
+  margin-right: 25px;
+}
+.membership__item-name {
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-align: left;
+  padding: 20px 0 40px 20px;
+}
+.membership__item-info {
+  font-size: 22px;
+  line-height: 1.5;
+  color: #A9A9AA;
+  padding-left: 20px;
+  padding-bottom: 25px;
+}
+.membership__item-wrapper {
+  padding-left: 50px;
+}
+.membership__item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-bottom: 15px;
+  position: relative;
+}
+.membership__item-text::after {
+  content: "";
+  background-image: url(../images/Vector.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 2px;
+  left: -30px;
+  bottom: 0;
+  right: 0;
+}
+.membership__item-price {
+  padding-left: 20px;
+  padding-block: 70px 15px;
+  font-size: 18px;
+  line-height: 2.22;
+  position: relative;
+}
+.membership__item-price b {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.25;
+}
+.membership__item-price::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px dotted #A9A9AA;
+  top: 0;
+  bottom: 130px;
+  left: 22px;
+  right: 0;
+  width: 352px;
+}
+.membership__item-btn {
+  width: 352px;
+  height: 64px;
+  border-style: none;
+  border-radius: 12px;
+  background-color: #656293;
+  color: #fff;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.81;
+  text-align: center;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

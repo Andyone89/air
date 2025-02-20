@@ -1,57 +1,100 @@
 .membership {
-    &__title{
+    &__title {
         background-image: url(../images/ellipse.png);
         background-repeat: no-repeat;
         background-position: center top 45%;
         text-align: center;
         @extend %title;
     }
-    &__wrapper{
+
+    &__wrapper {
         padding-top: 100px;
         display: flex;
         justify-content: center;
     }
-    &__item{
+
+    &__item {
         background-color: $cards;
         width: 400px;
         height: 572px;
         margin-right: 25px;
     }
-    
-    &__item-name{
+
+    &__item-name {
         font-size: 32px;
         line-height: 1.25;
         font-weight: 700;
         text-align: left;
         padding: 20px 0 40px 20px;
     }
-    &__item-info{
+
+    &__item-info {
         font-size: 22px;
         line-height: 1.5;
         color: #A9A9AA;
         padding-left: 20px;
         padding-bottom: 25px;
     }
-    &__item-wrapper{
+
+    &__item-wrapper {
         padding-left: 50px;
     }
-    &__item-text{
+
+    &__item-text {
         font-size: 16px;
         line-height: 1.5;
         padding-bottom: 15px;
         position: relative;
-        &::after{
-            content: "";
-            background-image: url(../images/Vector.svg);
-            background-repeat: no-repeat;
-            position: absolute;
-            top: 2px;
-            left: -30px;
-            bottom: 0;
-            right: 0;
+    }
 
+    &__item-text::after {
+        content: '';
+        background-image: url(../images/Vector.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 2px;
+        left: -30px;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__item-price {
+        padding-left: 20px;
+        padding-block: 70px 15px;
+        font-size: 18px;
+        line-height: 2.22;
+        position: relative;
+
+        b {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 1.25;
         }
     }
-    
+
+    &__item-price::after {
+        content: '';
+        position: absolute;
+        border-bottom: 1px dotted #A9A9AA;
+        top: 0;
+        bottom: 130px;
+        left: 22px;
+        right: 0;
+        width: 352px;
+    }
+    &__item-btn{
+        width: 352px;
+        height: 64px;
+        border-style: none;
+        border-radius: 12px;
+        background-color: $content;
+        color: $white;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.81;
+        text-align: center;
+        cursor: pointer;
+    }
+
 
 }
