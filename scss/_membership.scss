@@ -1,0 +1,123 @@
+.membership {
+    padding-bottom: 100px;
+    &__title {
+        background-image: url(../images/ellipse.png);
+        background-repeat: no-repeat;
+        background-position: center top 45%;
+        text-align: center;
+        @extend %title;
+    }
+
+    &__wrapper {
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        background-color: $cards;
+        width: 400px;
+        height: 572px;
+        margin-right: 25px;
+        text-align: center;
+        position: relative;
+    }
+    &__item:hover{
+        background-color: $content;
+        color: $white;
+        width: 400px;
+        height: 572px;
+        margin-right: 25px;
+        bottom: 30px;
+        transition: background-color 0.5s;
+        border-radius: 20px;
+
+        button{
+            background-color: $white;
+            color: $default;
+        }
+    }
+    &__item:nth-child(1){
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    &__item:last-child{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    &__item-name {
+        font-size: 32px;
+        line-height: 1.25;
+        font-weight: 700;
+        text-align: left;
+        padding: 20px 0 40px 20px;
+    }
+
+    &__item-info {
+        font-size: 22px;
+        line-height: 1.5;
+        color: #A9A9AA;
+        padding-left: 20px;
+        padding-bottom: 25px;
+        text-align: left;
+    }
+
+    &__item-wrapper {
+        padding-left: 20px;
+    }
+
+    &__item-text {
+        display: flex;
+        font-size: 16px;
+        line-height: 1.5;
+        padding-bottom: 15px;
+        position: relative;
+        text-align: left;
+    }
+
+    &__item-text-svg{
+        margin-right: 8px;
+        margin-bottom: 3px;
+    }
+
+
+
+    &__item-price {
+        padding-left: 20px;
+        padding-block: 70px 15px;
+        font-size: 18px;
+        line-height: 2.22;
+        text-align: left;
+        position: relative;
+
+        b {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 1.25;
+        }
+    }
+
+    &__item-price::after {
+        content: '';
+        position: absolute;
+        border-bottom: 1px dotted #A9A9AA;
+        top: 0;
+        bottom: 130px;
+        left: 22px;
+        right: 0;
+        width: 352px;
+    }
+    &__item-btn{
+        width: 352px;
+        height: 62px;
+        border-style: none;
+        border-radius: 12px;
+        background-color: $content;
+        color: $white;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.81;
+        text-align: center;
+        cursor: pointer;
+    }
+}
