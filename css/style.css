@@ -662,12 +662,13 @@ body {
   background-color: #656293;
   width: 100%;
 }
-.footer__inner {
-  flex-direction: column;
-}
 .footer__logo-img {
   margin-block: 50px 20px;
 }
 .footer__menu {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__menu-list {
   display: flex;
 }/*# sourceMappingURL=style.css.map */
