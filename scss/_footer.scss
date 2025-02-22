@@ -1,0 +1,15 @@
+.footer{
+    background-color: $content;
+    width: 100%;
+    &__inner{
+flex-direction: column;
+
+    }
+    &__logo-img{
+        margin-block: 50px 20px;
+        
+    }
+    &__menu{
+     display: flex;
+    }
+}
