@@ -831,9 +831,28 @@ body {
   .hero {
     width: 100%;
   }
+  .hero__title {
+    font-size: 36px;
+  }
   .hero__link-image {
-    width: 270px;
-    height: 370px;
+    margin-top: 30px;
+    width: 200px;
+    height: 270px;
+  }
+}
+@media (max-width: 600px) {
+  .hero__link-image {
+    display: none;
+  }
+  .hero__links {
+    text-align: center;
+  }
+  .hero__title {
+    padding-top: 50px;
+    padding-right: 0;
+  }
+  .hero__link-arrow {
+    display: none;
   }
 }
 @media (max-width: 450px) {
@@ -852,5 +871,8 @@ body {
     height: 30px;
     width: 74px;
     font-size: 12px;
+  }
+  .hero__title {
+    font-size: 26px;
   }
 }/*# sourceMappingURL=style.css.map */

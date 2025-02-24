@@ -25,6 +25,7 @@
       &__title {
          padding: 100px 20px 35px 0;
       }
+
       &__link-image {
          width: 270px;
          height: 370px;
@@ -103,7 +104,8 @@
          transform: scale(0);
       }
    }
-   .header.active{
+
+   .header.active {
       position: fixed;
       background-color: $cards;
       padding-bottom: 10px;
@@ -148,16 +150,34 @@
       width: 100%;
 
       &__title {
+         font-size: 36px;
       }
 
       &__link-image {
-         width: 270px;
-         height: 370px;
+         margin-top: 30px;
+         width: 200px;
+         height: 270px;
       }
    }
 }
 
-
+@media (max-width: 600px) {
+   .hero {
+      &__link-image {
+         display: none;
+      }
+      &__links{
+         text-align: center;
+      }
+      &__title{
+         padding-top: 50px;
+         padding-right: 0;
+      }
+      &__link-arrow{
+         display: none;
+      }
+   }
+}
 
 @media (max-width: 450px) {
    .header {
@@ -179,6 +199,11 @@
          height: 30px;
          width: 74px;
          font-size: 12px;
+      }
+   }
+   .hero {
+      &__title{
+        font-size: 26px;
       }
    }
 }
