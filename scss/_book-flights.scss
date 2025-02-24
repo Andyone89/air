@@ -177,33 +177,35 @@
         cursor: pointer;
     }
 
-    &__img:hover + .calendar__departure-click {
+    &__img:hover+.calendar__departure-click {
         transform: translateX(0);
-       
+
     }
-    &__img:hover + .calendar__return-click {
+
+    &__img:hover+.calendar__return-click {
         transform: translateX(0);
     }
 
-    &__departure-click{
+    &__departure-click {
         background-color: #d6d1d1;
         color: $default;
         width: auto;
         height: 34px;
-    margin-left: 74px;
+        margin-left: 74px;
         top: 70px;
         border: none;
         position: absolute;
         z-index: 10;
         transform: translateX(-9999px);
     }
-    &__return-click{
-       background-color: #d6d1d1;
+
+    &__return-click {
+        background-color: #d6d1d1;
         color: $default;
         width: auto;
         height: 34px;
         right: 0;
-      margin-left: 20px;
+        margin-left: 20px;
         margin-right: 24px;
         top: 70px;
         border: none;
