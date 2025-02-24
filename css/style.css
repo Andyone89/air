@@ -715,6 +715,13 @@ body {
   .hero__title {
     font-size: 50px;
   }
+  .book-flights {
+    width: auto;
+  }
+  .book-flights__from {
+    width: auto;
+    height: auto;
+  }
 }
 @media (max-width: 1000px) {
   .header {
