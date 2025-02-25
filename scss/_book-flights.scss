@@ -5,11 +5,12 @@
     box-shadow: 0px 30px 84px 0px #130A2E14;
 
     width: 1110px;
-    height: 266px;
+    height: 306px;
     border-radius: 12px;
     background-color: $white;
     margin: 0 auto;
-    transform: translateY(-40%);
+
+    transform: translateY(-30%);
     z-index: 10;
 
     &__list {
@@ -73,7 +74,8 @@
     &__wrapper {
         display: flex;
     }
-    &__wrapper-item{
+
+    &__wrapper-item {
         display: flex;
     }
 
@@ -151,7 +153,8 @@
     position: relative;
     width: 381px;
     height: 117px;
-    margin: 0 auto;
+    margin-inline: 10px;
+
     border: 1px solid #AAAAAA;
     border-radius: 10px;
 
