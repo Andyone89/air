@@ -202,6 +202,9 @@ body {
 .book-flights__wrapper {
   display: flex;
 }
+.book-flights__wrapper-item {
+  display: flex;
+}
 .book-flights__from {
   margin-left: 15px;
   margin-bottom: 15px;
@@ -718,12 +721,28 @@ body {
   .book-flights {
     width: auto;
   }
-  .book-flights__from {
+  .book-flights__from, .book-flights__to {
     width: auto;
-    height: auto;
+    height: 100%;
+  }
+  .book-flights__to {
+    width: 250px;
+    margin-right: 10px;
+  }
+  .book-flights__from-text, .book-flights__to-text {
+    padding-inline: 10px;
+  }
+  .book-flights__from-title, .book-flights__to-title {
+    padding-inline: 10px;
+  }
+  .book-flights__icon {
+    padding-top: 50px;
+  }
+  .calendar {
+    height: 135px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .header {
     display: block;
   }
@@ -739,6 +758,57 @@ body {
   .hero__link-image {
     width: 270px;
     height: 370px;
+  }
+  .book-flights {
+    margin-top: 80px;
+    height: 100%;
+    text-align: center;
+  }
+  .book-flights__wrapper {
+    display: block;
+  }
+  .book-flights__wrapper-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  .book-flights__from, .book-flights__to {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .book-flights__from {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .book-flights__to {
+    margin-left: 20px;
+  }
+  .book-flights__icon {
+    margin-inline: 10px 18px;
+  }
+  .book-flights__btn {
+    transform: translateY(40px);
+  }
+  .book-flights__btn-arrow {
+    transform: translateY(40px);
+  }
+  .calendar {
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin-block: 40px 20px;
+  }
+  .calendar__return-click {
+    padding-right: 20px;
+  }
+  .calendar__departure-click {
+    margin-right: 155px;
+  }
+  .calendar__return, .calendar__departure {
+    padding-inline: 70px 30px;
+  }
+  .calendar__img {
+    transform: translateX(-40px);
   }
 }
 @media (max-width: 780px) {
@@ -836,6 +906,7 @@ body {
     top: 7.6%;
   }
   .hero {
+    margin-bottom: 90px;
     width: 100%;
   }
   .hero__title {
@@ -845,6 +916,34 @@ body {
     margin-top: 30px;
     width: 200px;
     height: 270px;
+  }
+  .book-flights {
+    text-align: center;
+  }
+  .book-flights__wrapper {
+    display: block;
+  }
+  .book-flights__from, .book-flights__to {
+    height: 100%;
+    width: 100%;
+  }
+  .book-flights__from {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .book-flights__icon {
+    padding-block: 10px;
+  }
+  .book-flights__icon-link {
+    display: flex;
+    margin-right: 36px;
+    transform: translateX(50%);
+  }
+  .calendar {
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
   }
 }
 @media (max-width: 600px) {
