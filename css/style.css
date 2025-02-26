@@ -232,7 +232,6 @@ body {
   padding: 45px 6px 0;
 }
 .book-flights__requirements {
-  text-align: left;
   text-decoration-line: underline;
   color: #151515;
   padding-left: 14px;
@@ -254,9 +253,10 @@ body {
   text-align: left;
   padding-left: 20px;
   cursor: pointer;
+  transform: translateY(40px);
 }
 .book-flights__btn-arrow {
-  transform: translateX(-50px);
+  transform: translate(-50px, 40px);
   color: #fff;
   cursor: pointer;
 }
@@ -265,7 +265,7 @@ body {
   display: flex;
   position: relative;
   width: 381px;
-  height: auto;
+  height: 117px;
   margin-inline: 10px;
   border: 1px solid #AAAAAA;
   border-radius: 10px;
@@ -720,12 +720,14 @@ body {
   .book-flights {
     width: auto;
   }
+  .book-flights__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
   .book-flights__from, .book-flights__to {
-    width: auto;
-    height: 100%;
+    height: auto;
   }
   .book-flights__to {
-    width: 250px;
     margin-right: 10px;
   }
   .book-flights__from-text, .book-flights__to-text {
@@ -736,9 +738,6 @@ body {
   }
   .book-flights__icon {
     padding-top: 50px;
-  }
-  .calendar {
-    height: 135px;
   }
 }
 @media (max-width: 1050px) {
@@ -793,10 +792,10 @@ body {
   }
 }
 .calendar {
-  justify-content: space-around;
-  width: 100%;
-  height: 100%;
-  margin-block: 40px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
+  height: auto;
 }
 .calendar__return-click {
   padding-right: 20px;
@@ -805,10 +804,10 @@ body {
   margin-right: 155px;
 }
 .calendar__return, .calendar__departure {
-  padding-inline: 70px 30px;
+  padding-inline: 10px 20px;
 }
 .calendar__img {
-  transform: translateX(-40px);
+  margin-right: 10px;
 }
 
 @media (max-width: 780px) {
