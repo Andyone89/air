@@ -39,6 +39,21 @@
             font-size: 18px;
         }
     }
+    .description{
+        &__title{
+            font-size: 32px;
+        }
+        &__top-img{
+            width: 500px;
+            height: 320px;
+        }
+        &__top-name{
+            font-size: 20px;
+        }
+        &__top-text{
+            font-size: 14px;
+        }
+    }
 
 }
 
