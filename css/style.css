@@ -240,6 +240,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  padding-left: 20px;
 }
 .book-flights__btn {
   height: 80px;
@@ -724,11 +725,8 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  .book-flights__from, .book-flights__to {
-    height: auto;
-  }
-  .book-flights__to {
-    margin-right: 10px;
+  .book-flights__wrapper-item {
+    width: auto;
   }
   .book-flights__from-text, .book-flights__to-text {
     padding-inline: 10px;
@@ -738,6 +736,9 @@ body {
   }
   .book-flights__icon {
     padding-top: 50px;
+  }
+  .calendar__departure-title, .calendar__return-title {
+    font-size: 18px;
   }
 }
 @media (max-width: 1050px) {
@@ -790,26 +791,25 @@ body {
   .book-flights__btn-arrow {
     transform: translate(-60px, 40px);
   }
+  .calendar {
+    margin: 20px auto;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .calendar__return-click {
+    padding-right: 20px;
+  }
+  .calendar__departure-click {
+    margin-right: 155px;
+  }
+  .calendar__return, .calendar__departure {
+    padding-inline: 10px 20px;
+  }
+  .calendar__img {
+    margin-right: 10px;
+  }
 }
-.calendar {
-  display: flex;
-  justify-content: space-evenly;
-  width: auto;
-  height: auto;
-}
-.calendar__return-click {
-  padding-right: 20px;
-}
-.calendar__departure-click {
-  margin-right: 155px;
-}
-.calendar__return, .calendar__departure {
-  padding-inline: 10px 20px;
-}
-.calendar__img {
-  margin-right: 10px;
-}
-
 @media (max-width: 780px) {
   .header {
     position: fixed;
@@ -935,8 +935,6 @@ body {
   }
   .book-flights__icon-link {
     display: flex;
-    margin-right: 36px;
-    transform: translateX(50%);
   }
   .calendar {
     justify-content: space-evenly;
@@ -959,6 +957,9 @@ body {
   .hero__link-arrow {
     display: none;
   }
+  .book-flights__to {
+    height: 142px;
+  }
 }
 @media (max-width: 450px) {
   .header__logo-img {
@@ -979,5 +980,17 @@ body {
   }
   .hero__title {
     font-size: 26px;
+  }
+  .book-flights__list-item {
+    padding: 10px 10px 25px 3px;
+  }
+  .book-flights__list-link {
+    font-size: 12px;
+  }
+  .book-flights__wrapper {
+    display: block;
+  }
+  .book-flights__to, .book-flights__from {
+    height: 162px;
   }
 }/*# sourceMappingURL=style.css.map */

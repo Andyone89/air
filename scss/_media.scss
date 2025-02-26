@@ -9,16 +9,12 @@
         width: auto;
 
         &__wrapper {
-           display: flex;
-           justify-content: space-between;
-        }
-        &__from,
-        &__to {
-            height: auto;
+            display: flex;
+            justify-content: space-between;
         }
 
-        &__to {
-            margin-right: 10px;
+        &__wrapper-item {
+            width: auto;
         }
 
         &__from-text,
@@ -33,6 +29,14 @@
 
         &__icon {
             padding-top: 50px;
+        }
+    }
+
+    .calendar {
+
+        &__departure-title,
+        &__return-title {
+            font-size: 18px;
         }
     }
 
@@ -108,30 +112,30 @@
             transform: translate(-60px, 40px);
         }
     }
-}
 
+    .calendar {
+        margin: 20px auto;
+        width: auto;
+        display: flex;
+        justify-content: space-evenly;
 
-.calendar {
-    display: flex;
-    justify-content: space-evenly;
-    width: auto;
-    height: auto;
+        &__return-click {
+            padding-right: 20px;
 
-    &__return-click {
-        padding-right: 20px;
+        }
 
-    }
+        &__departure-click {
+            margin-right: 155px
+        }
 
-    &__departure-click {
-        margin-right: 155px
-    }
+        &__return,
+        &__departure {
+            padding-inline: 10px 20px;
+        }
 
-    &__return,
-    &__departure {
-        padding-inline: 10px 20px;
-    }
-    &__img{
-       margin-right: 10px;
+        &__img {
+            margin-right: 10px;
+        }
     }
 }
 
@@ -290,8 +294,6 @@
 
         &__icon-link {
             display: flex;
-            margin-right: 36px;
-            transform: translateX(50%);
         }
     }
 
@@ -322,6 +324,11 @@
             display: none;
         }
     }
+    .book-flights{
+        &__to{
+            height: 142px;
+        }
+    }
 }
 
 @media (max-width: 450px) {
@@ -350,6 +357,21 @@
     .hero {
         &__title {
             font-size: 26px;
+        }
+    }
+    .book-flights{
+        &__list-item{
+        padding: 10px 10px 25px 3px;
+        }
+        &__list-link{
+            font-size: 12px;
+        }
+        &__wrapper{
+            display: block;
+        }
+        &__to,
+        &__from{
+            height: 162px;
         }
     }
 }
