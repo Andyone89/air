@@ -6,6 +6,7 @@
     }
 
     .book-flights {
+        border-radius: 0;
         width: auto;
 
         &__wrapper {
@@ -311,7 +312,7 @@
 
     .menu.active {
         z-index: 5;
-        top: 7.6%;
+        top: 8%;
     }
 
     .hero {
@@ -366,34 +367,44 @@
     }
     .description{
         background-size: 40%;
-        background-position-y: 8%, 95%;
+        background-position-y: 28%, 98%;
        
         &__title{
-            font-size: 26px;
+            font-size: 24px;
         }
         &__top{
-            display: block;
-            
+            flex-direction: column-reverse; 
         }
         &__top-img{
             width: 450px;
             height: 270px;
-            margin-left: 0;
+           margin: 10px auto 20px;
         }
         &__top-info{
-            padding-block: 10px;
+           padding-block: 40px 10px;
+           padding-left: 0;
+           width: auto;
+           height: auto;
         }
         &__top-name{
-            padding-block: 40px 10px;
+            text-align: center;
+            padding-block: 10px 20px;
             font-size: 20px;
         }
         &__top-text{
-            width: auto;
+           text-align: center;
             font-size: 14px;
+    
         }
         &__bottom{
-            display: block;
-            margin-top: 30px;
+            flex-direction: column-reverse;
+            margin-block: 30px 10px;
+        }
+        &__bottom-wrapper{
+            width: auto;
+            height: auto;
+            text-align: center;
+            margin: 10px auto 20px;
         }
         &__bottom-name{
             font-size: 20px;
@@ -402,10 +413,12 @@
         &__bottom-img{
             width: 450px;
             height: 270px;
-            margin-top: 80px;
+            margin: 0px auto;
         }
         &__bottom-text{
+            text-align: center;
             font-size: 14px;
+            margin: 0 auto;
         }
     }
 }
@@ -432,6 +445,19 @@
     .book-flights{
         &__to{
             height: 142px;
+        }
+    }
+    .description{
+        background-size: 30%;
+        background-position-y: 34%, 93%;
+      
+        &__top-img{
+            width: 320px;
+            height: 200px;
+        }
+        &__bottom-img{
+            width: 320px;
+            height: 200px;
         }
     }
 }
@@ -477,6 +503,47 @@
         &__to,
         &__from{
             height: 162px;
+        }
+        &__btn{
+            transform: translate(14px, 30px);
+            width: 150px;
+            height: 60px;
+            font-size: 14px;
+            margin-right: 30px;
+        }
+        &__btn-arrow{
+           width: 12px;
+           height: 12px;
+           transform: translate(-50px, 54px);
+        }
+    }
+    .description{
+        background-size: 30%;
+        background-position-y: 34%, 93%;
+      
+        &__title{
+            font-size: 20px;
+        }
+        &__top-info{
+            padding-top: 20px;
+        }
+        &__top-name{
+            font-size: 18px;
+        }
+        &__top-img{
+            width: 270px;
+            height: 160px;
+        }
+        &__bottom{
+            margin-top: 10px;
+        }
+        &__bottom-name{
+            font-size: 18px;
+            padding-bottom: 20px;
+        }
+        &__bottom-img{
+            width: 270px;
+            height: 160px;
         }
     }
 }
