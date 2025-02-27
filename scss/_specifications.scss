@@ -4,6 +4,7 @@
     background-position: center;
     padding-bottom: 70px;
 
+
     &__title {
         background-image: url(../images/ellipse.png);
         background-repeat: no-repeat;
@@ -27,7 +28,8 @@
         width: 370px;
         height: 268px;
         border-radius: 12px;
-
+        z-index: 10;
+        
         box-shadow: 0px 1px 3px 0px #130A2E21;
         box-shadow: 0px 3px 14px 0px #130A2E08;
         box-shadow: 0px 8px 32px 0px #130A2E12;

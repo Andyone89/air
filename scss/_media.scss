@@ -64,6 +64,17 @@
             font-size: 14px;
         }
     }
+    .specifications{
+        background-position: 50%, center;
+        &__wrapper{
+            column-gap: 0;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__item{
+            width: auto;
+            margin: 0 20px;
+        }
+    }
 
 }
 
