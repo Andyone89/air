@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300&family=Roboto:wght@400;700&display=swap"
     rel="stylesheet">
+  
 </head>
 
 <body>
@@ -139,33 +141,33 @@
           </ul>
           <div class="book-flights__wrapper">
             <div class="book-flights__wrapper-item">
-            <div class="book-flights__from">
-              <p class="book-flights__from-text">
-                From
-              </p>
-              <p class="book-flights__from-title">
-                LAX
-              </p>
-              <p class="book-flights__from-text">
-                Los Angeles Intl Arpt,Los Angeles
-              </p>
-            </div>
-            <a class="book-flights__icon-link" href="#">
-              <img loading="lazy" src="./images/book-flights/vector.svg" alt="arrow" class="book-flights__icon">
-            </a>
+              <div class="book-flights__from">
+                <p class="book-flights__from-text">
+                  From
+                </p>
+                <p class="book-flights__from-title">
+                  LAX
+                </p>
+                <p class="book-flights__from-text">
+                  Los Angeles Intl Arpt,Los Angeles
+                </p>
+              </div>
+              <a class="book-flights__icon-link" href="#">
+                <img loading="lazy" src="./images/book-flights/vector.svg" alt="arrow" class="book-flights__icon">
+              </a>
 
-            <div class="book-flights__to">
-              <p class="book-flights__to-text">
-                To
-              </p>
-              <p class="book-flights__to-title">
-                MIA
-              </p>
-              <p class="book-flights__to-text">
-                Miami Intl,Miami
-              </p>
+              <div class="book-flights__to">
+                <p class="book-flights__to-text">
+                  To
+                </p>
+                <p class="book-flights__to-title">
+                  MIA
+                </p>
+                <p class="book-flights__to-text">
+                  Miami Intl,Miami
+                </p>
+              </div>
             </div>
-          </div>
             <div class="calendar">
               <div class="calendar__departure">
                 <p class="calendar__departure-name">
@@ -289,7 +291,7 @@
       <section class="charters">
         <div class="container">
           <h2 class="charters__title">Luxury Charters</h2>
-          <div class="charters__wrapper">
+          <div class="charters__wrapper charters__slider">
             <div class="charters__item">
               <a href="#" class="charters__link">
                 <img src="images/charters/1.jpg" alt="charters" class="charters__img">
@@ -512,6 +514,10 @@
       </div>
     </footer>
   </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
