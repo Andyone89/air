@@ -65,14 +65,11 @@
         }
     }
     .specifications{
-        background-position: 50%, center;
         &__wrapper{
-            column-gap: 0;
-            grid-template-columns: repeat(3, 1fr);
+           column-gap: 140px;
         }
         &__item{
-            width: auto;
-            margin: 0 20px;
+            width: 100%;
         }
     }
 
@@ -173,6 +170,11 @@
             margin-right: 10px;
         }
     }
+    .specifications{
+        &__title{
+            font-size: 32px;
+        }
+    }
 }
 @media (max-width: 900px)  {
     .description{
@@ -211,6 +213,12 @@
             font-size: 14px;
         }
     }
+    .specifications{
+        &__wrapper{
+           column-gap: 100px;
+        }
+    }
+
 }
 
 @media (max-width: 780px) {
@@ -323,7 +331,7 @@
 
     .menu.active {
         z-index: 5;
-        top: 8%;
+        top: 7.8%;
     }
 
     .hero {
@@ -432,6 +440,17 @@
             margin: 0 auto;
         }
     }
+    .specifications{
+        padding-top: 50px;
+        &__wrapper{
+           column-gap: 10px;
+           row-gap: 10px;
+        }
+        &__title{
+            padding-bottom: 20px;
+            font-size: 28px;
+        }
+    }
 }
 
 @media (max-width: 600px) {
@@ -469,6 +488,17 @@
         &__bottom-img{
             width: 320px;
             height: 200px;
+        }
+    }
+    .specifications{
+        padding-top: 0;
+        &__title{
+            font-size: 24px;
+            padding-bottom: 40px;
+        }
+        &__wrapper{
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 20px;
         }
     }
 }
@@ -547,6 +577,7 @@
         }
         &__bottom{
             margin-top: 10px;
+            padding-bottom: 40px;
         }
         &__bottom-name{
             font-size: 18px;
@@ -555,6 +586,23 @@
         &__bottom-img{
             width: 270px;
             height: 160px;
+        }
+    }
+    .specifications{
+        &__title{
+            font-size: 22px;
+            padding-bottom: 20px;
+        }
+        &__wrapper{
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 20px;
+        }
+        &__name{
+            font-size: 14px;
+        }
+        &__text{
+            font-size: 14px;
+            width: auto;
         }
     }
 }
