@@ -1,3 +1,6 @@
+import $ from "jquery";
+import "slick-carousel";
+
 $(function () {
     $('.header__burger').click(function (event) {
         $('.header__burger, .menu, .header').toggleClass('active');
