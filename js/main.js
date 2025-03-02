@@ -1,6 +1,3 @@
-import $ from "jquery";
-import "slick-carousel";
-
 $(function () {
     $('.header__burger').click(function (event) {
         $('.header__burger, .menu, .header').toggleClass('active');
@@ -9,7 +6,7 @@ $(function () {
 
 $(function () {
     $('.charters__slider').slick({
-        Infinie: true,
+        infinite: true,
         dots: true,
         slidesToShow: 4,
         slidesToScroll: 4
