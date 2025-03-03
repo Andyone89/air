@@ -40,46 +40,53 @@
             font-size: 18px;
         }
     }
-    .description{
-        &__title{
+
+    .description {
+        &__title {
             font-size: 32px;
         }
-        &__top-img{
+
+        &__top-img {
             width: 500px;
             height: 320px;
             margin-block: 140px 200px;
         }
-        &__top-name{
+
+        &__top-name {
             font-size: 20px;
         }
-        &__top-text{
+
+        &__top-text {
             font-size: 14px;
         }
-        &__bottom-img{
+
+        &__bottom-img {
             width: 500px;
             height: 320px;
             margin-top: 20px;
         }
-        &__bottom-text{
+
+        &__bottom-text {
             font-size: 14px;
         }
     }
-    .specifications{
-        &__wrapper{
-           column-gap: 140px;
+
+    .specifications {
+        &__wrapper {
+            column-gap: 140px;
         }
-        &__item{
+
+        &__item {
             width: 100%;
         }
     }
-    .charters{
-        &__item{
+
+    .charters {
+        &__item {
             margin-inline: 20px;
         }
     }
 }
-
-
 
 @media (max-width: 1050px) {
     .header {
@@ -158,11 +165,10 @@
 
         &__return-click {
             padding-right: 20px;
-
         }
 
         &__departure-click {
-            margin-right: 155px
+            margin-right: 155px;
         }
 
         &__return,
@@ -174,55 +180,69 @@
             margin-right: 10px;
         }
     }
-    .specifications{
+
+    .specifications {
+        &__title {
+            font-size: 32px;
+        }
+    }
+    .charters{
         &__title{
             font-size: 32px;
         }
     }
 }
-@media (max-width: 900px)  {
-    .description{
+
+@media (max-width: 900px) {
+    .description {
         background-size: 40%;
         background-position-y: 16%, 95%;
-       
-        &__title{
+
+        &__title {
             font-size: 26px;
         }
-        &__top-img{
+
+        &__top-img {
             width: 450px;
             height: 270px;
             margin-block: 120px 90px;
             margin-left: 0;
         }
-        &__top-name{
+
+        &__top-name {
             padding-block: 40px 10px;
             font-size: 20px;
         }
-        &__top-text{
+
+        &__top-text {
             font-size: 14px;
         }
-        &__bottom{
+
+        &__bottom {
             margin-top: 30px;
         }
-        &__bottom-name{
+
+        &__bottom-name {
             font-size: 20px;
             padding-bottom: 10px;
         }
-        &__bottom-img{
+
+        &__bottom-img {
             width: 450px;
             height: 270px;
             margin-top: 80px;
         }
-        &__bottom-text{
+
+        &__bottom-text {
             font-size: 14px;
         }
     }
-    .specifications{
-        &__wrapper{
-           column-gap: 100px;
+
+    .specifications {
+        &__wrapper {
+            column-gap: 100px;
         }
     }
-
 }
 
 @media (max-width: 780px) {
@@ -318,7 +338,6 @@
         }
 
         &__list-item {
-
             text-align: center;
             margin-block: 30px;
         }
@@ -354,12 +373,10 @@
     }
 
     .book-flights {
-
         text-align: center;
 
         &__wrapper {
             display: block;
-
         }
 
         &__from,
@@ -388,80 +405,99 @@
         height: 100%;
         margin-top: 40px;
     }
-    .description{
+
+    .description {
         background-size: 40%;
         background-position-y: 28%, 98%;
-       
-        &__title{
+
+        &__title {
             font-size: 24px;
         }
-        &__top{
-            flex-direction: column-reverse; 
+
+        &__top {
+            flex-direction: column-reverse;
         }
-        &__top-img{
+
+        &__top-img {
             width: 450px;
             height: 270px;
-           margin: 10px auto 20px;
+            margin: 10px auto 20px;
         }
-        &__top-info{
-           padding-block: 40px 10px;
-           padding-left: 0;
-           width: auto;
-           height: auto;
+
+        &__top-info {
+            padding-block: 40px 10px;
+            padding-left: 0;
+            width: auto;
+            height: auto;
         }
-        &__top-name{
+
+        &__top-name {
             text-align: center;
             padding-block: 10px 20px;
             font-size: 20px;
         }
-        &__top-text{
-           text-align: center;
+
+        &__top-text {
+            text-align: center;
             font-size: 14px;
-    
         }
-        &__bottom{
+
+        &__bottom {
             flex-direction: column-reverse;
             margin-block: 30px 10px;
         }
-        &__bottom-wrapper{
+
+        &__bottom-wrapper {
             width: auto;
             height: auto;
             text-align: center;
             margin: 10px auto 20px;
         }
-        &__bottom-name{
+
+        &__bottom-name {
             font-size: 20px;
             padding-bottom: 10px;
         }
-        &__bottom-img{
+
+        &__bottom-img {
             width: 450px;
             height: 270px;
             margin: 0px auto;
         }
-        &__bottom-text{
+
+        &__bottom-text {
             text-align: center;
             font-size: 14px;
             margin: 0 auto;
         }
     }
-    .specifications{
+
+    .specifications {
         padding-top: 50px;
-        &__wrapper{
-           column-gap: 10px;
-           row-gap: 10px;
+
+        &__wrapper {
+            column-gap: 10px;
+            row-gap: 10px;
         }
-        &__title{
+
+        &__title {
             padding-bottom: 20px;
             font-size: 28px;
         }
     }
-    .charters{
-        &__wrapper{
+
+    .charters {
+        &__title{
+            font-size: 28px;
+        }
+        &__wrapper {
             padding-top: 30px;
         }
-        &__item{
+
+        &__item {
             margin-inline: 10px;
         }
+    }
 }
 
 @media (max-width: 600px) {
@@ -483,33 +519,48 @@
             display: none;
         }
     }
-    .book-flights{
-        &__to{
+
+    .book-flights {
+        &__to {
             height: 142px;
         }
     }
-    .description{
+
+    .description {
         background-size: 30%;
         background-position-y: 34%, 93%;
-      
-        &__top-img{
+
+        &__top-img {
             width: 320px;
             height: 200px;
         }
-        &__bottom-img{
+
+        &__bottom-img {
             width: 320px;
             height: 200px;
         }
     }
-    .specifications{
+
+    .specifications {
         padding-top: 0;
-        &__title{
+
+        &__title {
             font-size: 24px;
             padding-bottom: 40px;
         }
-        &__wrapper{
+
+        &__wrapper {
             grid-template-columns: repeat(1, 1fr);
             row-gap: 20px;
+        }
+    }
+    .charters{
+        &__wrapper{
+            padding-block: 10px 30px;
+        }
+        &__title{
+            background-size: 30px;
+            font-size: 24px;
         }
     }
 }
@@ -542,79 +593,112 @@
             font-size: 26px;
         }
     }
-    .book-flights{
-        &__list-item{
-        padding: 10px 10px 25px 3px;
+
+    .book-flights {
+        &__list-item {
+            padding: 10px 10px 25px 3px;
         }
-        &__list-link{
+
+        &__list-link {
             font-size: 12px;
         }
-        &__wrapper{
+
+        &__wrapper {
             display: block;
         }
+
         &__to,
-        &__from{
+        &__from {
             height: 162px;
         }
-        &__btn{
+
+        &__btn {
             transform: translate(14px, 30px);
             width: 150px;
             height: 60px;
             font-size: 14px;
             margin-right: 30px;
         }
-        &__btn-arrow{
-           width: 12px;
-           height: 12px;
-           transform: translate(-50px, 54px);
+
+        &__btn-arrow {
+            width: 12px;
+            height: 12px;
+            transform: translate(-50px, 54px);
         }
     }
-    .description{
+
+    .description {
         background-size: 30%;
         background-position-y: 34%, 93%;
-      
-        &__title{
+
+        &__title {
             font-size: 20px;
         }
-        &__top-info{
+
+        &__top-info {
             padding-top: 20px;
         }
-        &__top-name{
+
+        &__top-name {
             font-size: 18px;
         }
-        &__top-img{
+
+        &__top-img {
             width: 270px;
             height: 160px;
         }
-        &__bottom{
+
+        &__bottom {
             margin-top: 10px;
             padding-bottom: 40px;
         }
-        &__bottom-name{
+
+        &__bottom-name {
             font-size: 18px;
             padding-bottom: 20px;
         }
-        &__bottom-img{
+
+        &__bottom-img {
             width: 270px;
             height: 160px;
         }
     }
-    .specifications{
-        &__title{
+
+    .specifications {
+        &__title {
             font-size: 22px;
             padding-bottom: 20px;
         }
-        &__wrapper{
+
+        &__wrapper {
             grid-template-columns: repeat(1, 1fr);
             row-gap: 20px;
         }
-        &__name{
+
+        &__name {
             font-size: 14px;
         }
-        &__text{
+
+        &__text {
             font-size: 14px;
             width: auto;
         }
     }
-}
+    .charters{
+        &__wrapper{
+            padding-block: 10px 0;
+        }
+        &__title{
+            background-size: 20px;
+            padding-bottom: 10px;
+            font-size: 22px;
+        }
+        &__img{
+            margin-top: 10px;
+            padding-top: 0;
+            width: 200px;
+            height: 160px;
+            border-radius: 10px;
+        }
+    }
 }
