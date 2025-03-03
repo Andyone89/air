@@ -72,7 +72,11 @@
             width: 100%;
         }
     }
-
+    .charters{
+        &__item{
+            margin-inline: 20px;
+        }
+    }
 }
 
 
@@ -451,6 +455,13 @@
             font-size: 28px;
         }
     }
+    .charters{
+        &__wrapper{
+            padding-top: 30px;
+        }
+        &__item{
+            margin-inline: 10px;
+        }
 }
 
 @media (max-width: 600px) {
@@ -605,4 +616,5 @@
             width: auto;
         }
     }
+}
 }
