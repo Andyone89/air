@@ -9,7 +9,7 @@
     }
 
     &__wrapper {
-        padding-top: 100px;
+        padding-top: 60px;
         display: flex;
         justify-content: center;
     }
@@ -18,7 +18,8 @@
         background-color: $cards;
         width: 400px;
         height: 572px;
-        margin-right: 25px;
+        margin-right: 10px;
+        margin-inline-start: 10px;
         text-align: center;
         position: relative;
     }
@@ -27,7 +28,6 @@
         color: $white;
         width: 400px;
         height: 572px;
-        margin-right: 25px;
         bottom: 30px;
         transition: background-color 0.5s;
         border-radius: 20px;
@@ -119,5 +119,6 @@
         line-height: 1.81;
         text-align: center;
         cursor: pointer;
+        margin-inline: 10px;
     }
 }

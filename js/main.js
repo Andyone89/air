@@ -9,6 +9,7 @@ $(function () {
         infinite: true,
         dots: true,
         autoplay: true,
+        autoplaySpeed: 5000,
         speed: 900,       
         slidesToShow: 4,
         slidesToScroll: 4,
@@ -52,27 +53,3 @@ $(function () {
         ]
     });
 });
-$(function () {
-    $('.membership__slider').slick({
-        infinite: true,
-        dots: false,
-        autoplay: true,
-        speed: 900,       
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        responsive: [
-            {
-              breakpoint: 1120,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true,
-                autoplay: true
-              }
-            },
-        ]
-    })
-});
-if(window.innerWidth < 768) {
-    mobileOnlySlider();}
