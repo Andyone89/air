@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "node-sass-tilde-importer": "^1.0.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "webkit": "^0.0.0"
   }
 }

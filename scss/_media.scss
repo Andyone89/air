@@ -475,7 +475,7 @@
 
     .menu.active {
         z-index: 5;
-        top: 7.8%;
+        top: 60px;
     }
 
     .hero {
@@ -625,8 +625,25 @@
         &__wrapper {
             width: 100%;
             height: 100%;
+            margin: 0 auto;
+            overflow-x: auto;
             overflow-y: hidden;
             justify-content: space-between;
+
+            &::-webkit-scrollbar {
+                height: 8px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: $content;
+                border-radius: 10px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: $cards;
+                border-radius: 10px;
+                margin-inline: 30px;
+            }
         }
 
         &__item {
@@ -637,22 +654,21 @@
         &__item:hover {
             height: 410px;
         }
-
-        &__wrapper::-webkit-scrollbar {
-            width: 10px;
-           margin-inline: 10px;
+    }
+    .footer{
+        &__menu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-block: 5px;
+        }
+        &__logo-img{
+            margin-block: 18px;
+        }
+        &__menu-info{
+          margin-top: 10px;
         }
 
-        &__wrapper::-webkit-scrollbar-thumb {
-            background: $content;
-            border-radius: 10px;
-           
-        }
-
-        &__wrapper::-webkit-scrollbar-track {
-            background: $cards;
-            border-radius: 10px;
-        }
     }
 }
 
@@ -860,6 +876,28 @@
             width: 200px;
             height: 160px;
             border-radius: 10px;
+        }
+    }
+    .membership{
+        &__title{
+            font-size: 24px;
+        }
+    }
+    .footer{
+        &__menu-list{
+            display: block;
+            text-align: center;
+            
+        }
+        &__logo-img{
+            width: 110px;
+            height: 30px;
+        }
+        &__menu-item-link{
+            padding-right: 0;
+        }
+        &__inner::before{
+            bottom: 130px;
         }
     }
 }
