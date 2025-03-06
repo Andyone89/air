@@ -439,7 +439,7 @@
     }
 
     .header.active {
-        position: fixed;
+        // position: fixed;
         background-color: $cards;
         padding-bottom: 10px;
         transition: background-color 0.5s;
@@ -475,7 +475,7 @@
 
     .menu.active {
         z-index: 5;
-        top: 60px;
+        top: 54px;
     }
 
     .hero {
