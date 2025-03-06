@@ -672,6 +672,9 @@
 }
 
 @media (max-width: 600px) {
+    .menu{
+        width: 50%;
+        }
     .hero {
         &__link-image {
             display: none;
